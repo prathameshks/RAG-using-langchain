@@ -1,0 +1,13 @@
+pandas
+numpy
+langchain
+langchain-community
+unstructured
+chromadb
+transformers
+huggingface-hub
+requests
+python-dotenv
+langchain-chroma
+sentence_transformers
+google-generativeai
