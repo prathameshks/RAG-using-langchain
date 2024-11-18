@@ -2,3 +2,4 @@
 venv/
 chroma_db
 .vscode
+chroma

@@ -11,3 +11,5 @@ python-dotenv
 langchain-chroma
 sentence_transformers
 google-generativeai
+markdown
+python-docx 

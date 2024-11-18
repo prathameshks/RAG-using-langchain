@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Substitutions and FoodKG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ingredient Substitutions and FoodKG</h1>
+        <p>A comprehensive approach to ingredient substitutions and healthy alternatives using FoodKG and DIISH
+            heuristic.</p>
+    </header>
+
+    <section>
+        <h2>Ingredient Substitutions</h2>
+        <p>Source [10] has examined all possible identification directions and the suggestion of ingredient
+            alternatives. FoodKG is described as a knowledge graph that allows ranking the most plausible alternatives
+            for explicit semantic information, as well as the implicit semantics captured by word embeddings, leading
+            users toward healthy choices based on dietary requirements and preferences.</p>
+    </section>
+
+    <section>
+        <h2>FoodKG: A Food Knowledge Graph</h2>
+        <p>FoodKG is a knowledge graph of recipes and their ingredients, sourced from various references:</p>
+        <ul>
+            <li><strong>Food Category:</strong> FoodKG utilizes knowledge from the FoodOn ontology to classify
+                ingredients.</li>
+            <li><strong>Nutritional Content:</strong> FoodKG associates ingredients with USDA data, offering detailed
+                nutritional information (calories, macronutrients, and micronutrients).</li>
+            <li><strong>Recipes:</strong> FoodKG includes various recipes, enabling analysis of ingredient occurrences
+                and recipe contexts.</li>
+        </ul>
+        <p>Figure 4 and reference [15] show how FoodKG links ingredient information with FoodOn ontology and USDA
+            nutritional data:</p>
+        <img src="figure4.png" alt="FoodKG Example" width="500">
+    </section>
+
+    <section>
+        <h2>Naming Target Ingredients and Healthy Alternatives</h2>
+        <p>FoodKG helps identify ingredients to replace based on dietary restrictions. The system considers:</p>
+        <ul>
+            <li><strong>Ingredient Type Restrictions:</strong> Based on FoodOn’s class hierarchy, it automatically
+                infers proscribed ingredients (e.g., meat for vegetarians).</li>
+            <li><strong>Nutritional Content Constraints:</strong> The app computes the nutritional content using USDA
+                data to highlight ingredients contributing to restricted nutrients.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ranking Possible Substitutions: The DIISH Heuristic</h2>
+        <p>Source [8] introduces the Diet-Improvement Ingredient Substitutability Heuristic (DIISH), which combines
+            explicit and implicit semantics using word embeddings like Word2Vec and spaCy. DIISH uses four scoring
+            metrics:</p>
+        <ul>
+            <li><strong>Co-occurrence Similarity:</strong> Measures the co-occurrence of ingredients in recipes.</li>
+            <li><strong>Recipe Context Similarity:</strong> Captures the similarity in recipe contexts between the
+                target ingredient and potential substitutes using PPMI.</li>
+        </ul>
+        <p>These scores are combined into a ranking formula that suggests meaningful ingredient substitutes, excluding
+            ingredients that are superclasses or subclasses of the target.</p>
+    </section>
+
+    <section>
+        <h2>Evaluation and Sample Results</h2>
+        <p>DIISH’s effectiveness was tested using three datasets, demonstrating superior performance compared to
+            baselines. The following table shows some substitution examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Target Ingredient</th>
+                    <th>Ground-Truth Substitutes</th>
+                    <th>DIISH's Top 5 Ranked Substitutes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arugula</td>
+                    <td>Watercress, Belgian endive, Radicchio, Escarole</td>
+                    <td>Watercress, Frisee, Radicchio, Romaine lettuce, Butter lettuce</td>
+                </tr>
+                <tr>
+                    <td>Lard</td>
+                    <td>Vegetable oil, Shortening, Margarine, Bacon fat</td>
+                    <td>Vegetable shortening, Shortening, Margarine, Bacon fat, Butter</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Example Use Case: Diabetic Patient</h2>
+        <p>Source [15] demonstrates the application of DIISH for a diabetic patient seeking to reduce carbohydrate
+            intake. The system suggests healthier substitutes for potatoes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ranked Substitutes</th>
+                    <th>Carbohydrates per 100g</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Turnip</td>
+                    <td>6.4g</td>
+                </tr>
+                <tr>
+                    <td>Squash</td>
+                    <td>6.9g</td>
+                </tr>
+                <tr>
+                    <td>Cauliflower</td>
+                    <td>5.0g</td>
+                </tr>
+                <tr>
+                    <td>Butternut squash</td>
+                    <td>11.7g</td>
+                </tr>
+                <tr>
+                    <td>Zucchini</td>
+                    <td>3.1g</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Custom Databases and Local Food Products</h2>
+        <p>In addition to FoodKG, custom databases tailored for local food products have been developed, such as a
+            mobile app that combines barcode scanning with OCR technology to identify food ingredients and provide
+            health advice. This app supplements information from open-source databases like Open Food Facts [17].</p>
+    </section>
+
+    <footer>
+        <p>References:</p>
+        <ul>
+            <li>[10] Source on ingredient identification and suggestions.</li>
+            <li>[15] FoodKG and DIISH heuristic references.</li>
+            <li>[17] Open Food Facts for local food data.</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

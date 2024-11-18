@@ -1,0 +1,58 @@
+D. Food Ingredient Databases:
+Accessible and comprehensive food ingredient databases are a benchmark for mobile applications meant to
+enhance dietary choices and outcomes. It contains detailed data of food products, among which are the
+ingredients, nutritional values, and potential allergens. [4] One such example includes the open source
+database known as Open Food Facts, containing over 50,000 entries of food products present in 134
+countries. [5] However, often, custom databases need to be created with regard to specific requirements so
+that local food products may be covered. [8] 
+One is PHARA, which uses a client-server architecture with a MongoDB database to implement
+recommendations of healthy foods. The database contains items as well as user profiles. It feeds this
+information into the application's recommendation engine whereby consumers marked out healthier foods
+they liked and wanted by preference and need[5].
+Another application is regarding ingredient analysis especially concerning food allergies. This is done using
+a barcode scanner and OCR by scanning the ingredients against a food and health database having known
+allergens. Ingredients scanned will alert the users on those materials that can cause allergic reactions. [5] 
+ARFusion is the grocery shopping application enabled with AR based on a health-based model of nutrition,
+and has personal and family profiles filled into it. It requires relating data from product database tracking
+information of every product's ingredient, nutrient, and the location in the grocery, which information allows
+the application to make real-time personalized recommendations on healthy products. [9] 
+Moreover, the substitution of ingredients is performed using knowledge graphs. One such system was
+created based on a knowledge graph called FoodKG which interconnected the ingredients with the food
+ontology named FoodOn and even nutritional information by USDA. This system points out healthy
+alternatives according to dietary restrictions. [10] 
+Therefore, there is a great need to establish such comprehensive food ingredient databases that would be
+accessible for consumers so that they might choose their foods wisely, where they would enjoy better habits
+of consumption and general well-being. [4] 
+E. UI/UX in Food-Related Mobile Applications: A Balancing Act
+But of both, what shines through is the role that well-designed UIs and UXs play especially for the mobile
+applications concerning food. Rather more salient considerations piling too much information on users or
+taking them through complicated navigation is more nuisance to engagement and effectiveness resulting
+from balancing clamor for quick and easy access of such applications. 
+One of the ways through which complicated information can be made accessible is through visual, such as
+color-coded tags and intuitive layouts. The result of the study was that the color-coded AR tags were very
+easy for the users to distinguish between the healthy and unhealthy products. The developers of the
+PHARA attempted to develop modular visual parts that would pass relevant information in a clear-cut
+Cureus Journal of Computer Science
+5 of 12
+manner. Figure 8 of this source shows several layouts of PHARA in making food product information
+understandable. [3]  
+For example, the design of a mobile application concerning the ingredient analysis is essential to make sure
+it becomes user friendly, considering there are food allergic users who might at some point require
+assistance. The interface of the application focused on simplicity in daily use. [3] 
+Therefore, developers have to face the specific functional-related issues pertaining to such applications. For
+example, food scanner applications require one to scan the barcodes of each article purchased in the
+market. It is cumbersome and time-consuming in the process. These features, combined with overall
+information regarding nutritional content usually available, pose a burdensome job for the user to go through
+the information and take the right decisions. [3] 
+On the contrary, FOP labels present a much less complicated approach. FOP labeling acquires the real
+simplified nutritional information on product packaging. This ease of access and processing becomes a
+good reason why FOP labels are more effective in determining consumer choices compared to food scanner
+apps. [11] 
+Another great UI/UX is restaurant AR menus. With restaurant AR, the wish of the customers can be
+satisfied with three-dimensional images of dishes and even whole lists of ingredients; the menu can be
+interactive. The value of the information should be conserved rather than speed up the generation of the
+content. In order to get success, the entire AR experience has to be intuitive as well as informative. [4] 
+More generally, the sources emphasize that the development of successful food-related mobile apps will
+require special attention to UI/UX principles. Balancing 'complexity' of features with the need for a seamless
+user experience is key to user engagement and, in the end, the impact of the app toward changing users'
+healthy choices.
